@@ -1,0 +1,122 @@
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  
+  
+
+  
+  
+  
+
+  
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.js"></script>
+
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+
+  
+
+  <style type="text/css">
+    
+  </style>
+
+
+  
+    
+
+
+
+
+<script type='text/javascript'>//<![CDATA[
+
+$(function () {
+    Highcharts.chart('container2', {
+        chart: {
+            plotBackgroundColor: null,
+            backgroundColor:'rgba(255, 255, 255, 0.75)',
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Programming languages Scott used in 2016'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black',
+                        fontSize:'18px'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Usage',
+            colorByPoint: true,
+            data: [{
+                name: 'Swft',
+                y: 56.33
+            }, {
+                name: 'Javascript',
+                y: 24.03,
+                sliced: true,
+                selected: true
+            }, {
+                name: 'Python',
+                y: 10.38
+            }, {
+                name: 'HTML/CSS',
+                y: 4.77
+            }, {
+                name: 'C/C++',
+                y: 0.91
+            }, {
+                name: 'Java',
+                y: 0.2
+            }]
+        }]
+    });
+});
+//]]> 
+
+</script>
+
+  
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+  
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "None"
+    }], "*")
+  }
+</script>
+
+
+
+
